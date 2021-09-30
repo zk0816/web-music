@@ -1,0 +1,99 @@
+.footer {
+  height: 172px;
+  background-color: #f2f2f2;
+  color: #666;
+  border-top: 1px solid #d3d3d3;
+  font-size: 12px;
+  .content {
+    display: flex;
+    width: 980px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  //尾部左边
+  .footer_left {
+    padding-top: 15px;
+    line-height: 24px;
+    width: 520px;
+    margin-right: 40px;
+    .link {
+      a {
+        color: #999;
+      }
+      .line {
+        margin: 0 10px;
+        color: #999;
+      }
+    }
+    .copyright {
+      a {
+        color: #666;
+      }
+      span {
+        margin-right: 15px;
+      }
+    }
+  }
+  //尾部右边
+  .footer_right {
+    display: flex;
+    justify-content: center;
+    width: 420px;
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+      .link {
+        display: block;
+        margin: 0 5px 0 0;
+        width: 50px;
+        height: 45px;
+        background-image: url("../../assets/img/sprite_footer_02.png");
+        background-size: 105px 545px;
+      }
+      .title {
+        margin-top: 5px;
+        display: block;
+        height: 14px;
+        background-image: url("../../assets/img/sprite_footer_01.png");
+        background-size: 170px 153px;
+      }
+    }
+    .item:nth-child(1) a {
+      background-position: -55px -451px;
+    }
+    .item:nth-child(2) a {
+      background-position: -56px -100px;
+    }
+    .item:nth-child(3) a {
+      background-position: 0 0;
+    }
+    .item:nth-child(4) a {
+      background-position: -55px -50px;
+    }
+    .item:nth-child(5) a {
+      background-position: 0 -100px;
+    }
+    .item:nth-child(1) span {
+      background-position: 5px -119px;
+      width: 72px;
+    }
+    .item:nth-child(2) span {
+      background-position: 0 -100px;
+      width: 50px;
+    }
+    .item:nth-child(3) span {
+      background-position: 0 0;
+      width: 50px;
+    }
+    .item:nth-child(4) span {
+      background-position: 2px -60px;
+      width: 50px;
+    }
+    .item:nth-child(5) span {
+      background-position: -5px -80px;
+      width: 50px;
+    }
+  }
+}

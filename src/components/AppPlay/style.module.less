@@ -1,0 +1,84 @@
+.fill {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  //锁住样式
+  .lock_lock {
+    a {
+      display: block;
+      background: url('../../assets/img/playbar_sprite.png') -103px -383px;
+      width: 10px;
+      height: 13px;
+      position: absolute;
+      top: 8px;
+      left: 20px;
+    }
+    a:hover {
+      display: block;
+      background: url('../../assets/img/playbar_sprite.png') no-repeat -101px -401px;
+      width: 14px;
+      height: 16px;
+      position: absolute;
+      top: 6px;
+      left: 18px;
+    }
+  }
+  //解锁样式
+  .lock {
+    /* stylelint-disable no-descending-specificity */
+    a {
+      display: block;
+      background: url('../../assets/img/playbar_sprite.png') no-repeat -82px -383px;
+      width: 14px;
+      height: 13px;
+      position: absolute;
+      top: 8px;
+      left: 20px;
+    }
+    a:hover {
+      display: block;
+      background: url('../../assets/img/playbar_sprite.png') no-repeat -80px -401px;
+      width: 18px;
+      height: 16px;
+      position: absolute;
+      top: 6px;
+      left: 18px;
+    }
+  }
+  .icon {
+    background: url('../../assets/img/playbar_sprite.png') no-repeat 0 -380px;
+    width: 67px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    top: -14px;
+    z-index: 12;
+  }
+  .top {
+    zoom: 1;
+    height: 10px;
+    width: 100%;
+    z-index: 1002;
+    transition: height 0.2s;
+    background: url('../../assets/img/playbar_sprite.png') no-repeat 0 0;
+    background-repeat: repeat-x;
+  }
+  .top:hover {
+    height: 50px;
+  }
+  .top_lock {
+    zoom: 1;
+    height: 53px;
+    width: 100%;
+    z-index: 1002;
+    transition: height 0.2s;
+    background: url('../../assets/img/playbar_sprite.png') no-repeat 0 0;
+    background-repeat: repeat-x;
+    .play {
+      width: 980px;
+      height: 47px;
+    }
+  }
+}

@@ -1,0 +1,99 @@
+.header {
+  width: 100%;
+  background: #242424;
+  .m_top {
+    width: 1100px;
+    background: #242424;
+    height: 70px;
+    display: flex;
+    margin: 0 auto;
+    //左边
+    //头部图片
+    .top_img {
+      background: url('../../assets/img/sprite_01.png') no-repeat 0 -19px;
+      width: 176px;
+      height: 69px;
+      line-height: 70px;
+      text-align: center;
+      background-position: 0 0;
+      display: inline-block;
+      text-indent: -99999px;
+    }
+    .top_title {
+      display: flex;
+      line-height: 70px;
+      flex: 1;
+    }
+    a {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      font-size: 14px;
+      color: #ccc;
+      padding: 0 19px;
+      text-decoration: none;
+    }
+    .top_item:hover {
+      background: #000;
+      color: white;
+    }
+    //点击样式
+    .link_active {
+      background-color: #000;
+      color: white;
+      position: relative;
+      .icon {
+        background: url('../../assets/img/sprite_01.png') no-repeat -226px 0;
+        width: 12px;
+        height: 6px;
+        position: absolute;
+        bottom: 0;
+        left: 45%;
+      }
+    }
+    //hot 图标
+    .hot {
+      background: url('../../assets/img/sprite_01.png') no-repeat -192px 0;
+      width: 26px;
+      height: 13px;
+      position: relative;
+      bottom: 51px;
+      left: 100px;
+      background-position: -190px 0;
+    }
+
+    //右边
+    .m_right {
+      display: flex;
+      align-items: center;
+      color: #ccc;
+      font-size: 12px;
+    }
+    .search {
+      width: 158px;
+      height: 32px;
+      border-radius: 16px;
+      input {
+        &::placeholder {
+          font-size: 12px;
+        }
+      }
+    }
+    .center {
+      width: 90px;
+      height: 32px;
+      line-height: 32px;
+      text-align: center;
+      border: 1px solid #666;
+      box-sizing: border-box;
+      border-radius: 20px;
+      margin: 0 17px 0 16px;
+      color: #ccc;
+    }
+    .center:hover {
+      color: white;
+      border: 1px solid white;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,139 @@
+.top {
+  width: 230px;
+  .header {
+    display: flex;
+    width: 230px;
+    height: 120px;
+    padding: 20px 0 0 19px;
+    .img {
+      width: 80px;
+      height: 80px;
+      position: relative;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+      a {
+        display: block;
+        background: url('../../../assets/img/sprite_cover.png') no-repeat -145px -57px;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+    .title {
+      width: 116px;
+      margin: 6px 0 0 10px;
+      .title_list {
+        color: #333;
+        font-size: 14px;
+        font-weight: bold;
+      }
+      .title_img {
+        display: flex;
+        padding: 10px 0 0 0;
+        a:first-child {
+          background: url('../../../assets/img/sprite_02.png') no-repeat -267px -205px;
+          height: 22px;
+          width: 22px;
+          margin-right: 10px;
+        }
+        a:last-child {
+          background: url('../../../assets/img/sprite_02.png') no-repeat -300px -207px;
+          height: 22px;
+          width: 22px;
+        }
+        a:first-child:hover {
+          background: url('../../../assets/img/sprite_02.png') no-repeat -267px -235px;
+          height: 22px;
+          width: 22px;
+        }
+        a:last-child:hover {
+          background: url('../../../assets/img/sprite_02.png') no-repeat -300px -237px;
+          height: 22px;
+          width: 22px;
+        }
+      }
+    }
+  }
+  .list {
+    .list_item {
+      width: 202px;
+      height: 32px;
+      margin-left: 20px;
+      display: flex;
+      flex: 1;
+      span {
+        display: inline-block;
+        height: 32px;
+        line-height: 32px;
+        margin-right: 20px;
+      }
+      .name {
+        display: inline-block;
+        height: 32px;
+        line-height: 32px;
+        color: #000;
+        font-size: 12px;
+        width: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .icon {
+        width: 82px;
+        height: 32px;
+        display: none;
+        align-items: center;
+        justify-content: space-around;
+        .icon_one {
+          display: inline-block;
+          background: url('../../../assets/img/sprite_02.png') no-repeat -267px -268px;
+          width: 17px;
+          height: 17px;
+        }
+        .icon_one:hover {
+          background: url('../../../assets/img/sprite_02.png') no-repeat -267px -288px;
+          width: 17px;
+          height: 17px;
+        }
+        .icon_two {
+          display: inline-block;
+          background: url('../../../assets/img/sprite_icon2.png') no-repeat 0 -700px;
+          width: 14px;
+          height: 15px;
+        }
+        .icon_two:hover {
+          background: url('../../../assets/img/sprite_icon2.png') no-repeat -22px -700px;
+          width: 14px;
+          height: 15px;
+        }
+        .icon_three {
+          display: inline-block;
+          background: url('../../../assets/img/sprite_02.png') no-repeat -297px -270px;
+          width: 16px;
+          height: 14px;
+        }
+        .icon_three:hover {
+          background: url('../../../assets/img/sprite_02.png') no-repeat -297px -290px;
+          width: 16px;
+          height: 14px;
+        }
+      }
+    }
+    &:hover {
+      .icon {
+        display: flex;
+      }
+    }
+  }
+  .footer {
+    height: 32px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 32px;
+  }
+}

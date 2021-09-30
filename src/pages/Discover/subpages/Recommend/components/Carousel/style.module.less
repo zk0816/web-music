@@ -1,0 +1,83 @@
+
+.banner {
+  display: flex;
+  justify-content: center;
+  //左边
+  .left_top {
+    margin: auto 0;
+    position: relative;
+    right: 40px;
+    width: 37px;
+    height: 63px;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    }
+    .left {
+      margin: 12px 0 0 8px;
+      background: url('../../../../../../assets/img/banner_sprite.png') no-repeat -9px -372px;
+      width: 19px;
+      height: 37px;
+    }
+  }
+  //轮播图
+  .banner_top {
+    width: 730px;
+    //修改antd 默认样式 需要加global
+    //中间小圆点
+    :global {
+      .ant-carousel .slick-dots li {
+        margin: 0 10px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+      }
+      .ant-carousel .slick-dots li button {
+        height: 6px;
+        border-radius: 50%;
+      }
+      .ant-carousel .slick-dots .slick-active {
+        button {
+          background: red;
+        }
+      }
+      .ant-carousel .slick-dots li button:hover {
+        background: red;
+      }
+    }
+    .banner_item {
+      overflow: hidden;
+      height: 285px;
+      .image {
+        height: 285px;
+        line-height: 285px;
+        width: 730px;
+      }
+    }
+  }
+  //下载图片
+  .download {
+    display: inline-block;
+    background: url('../../../../../../assets/img/download.png') no-repeat 0 0;
+    width: 254px;
+    height: 285px;
+  }
+  //右边
+  .right_top {
+    margin: auto 0;
+    position: relative;
+    left: 40px;
+    width: 37px;
+    height: 63px;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    }
+    .right {
+      margin: 12px 0 0 8px;
+      background: url('../../../../../../assets/img/banner_sprite.png') no-repeat  -10px -520px;
+      width: 19px;
+      height: 37px;
+    }
+  }
+}
