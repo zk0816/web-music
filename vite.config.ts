@@ -11,6 +11,7 @@ export default defineConfig({
             tsconfig: "./tsconfig.json",
         }),
   ],
+  base: './',
   resolve:{
     alias:{
       '@': path.resolve(__dirname,'./src')
@@ -18,6 +19,8 @@ export default defineConfig({
     extensions: [".tsx", ".ts", ".js"],
   },
   server: {
+    cors:true,
+    host: '0.0.0.0',
     port: 8080,
     proxy:{
       '/api':{
